@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body{
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex ipsum, rhoncus sed sollicitudin eget, cursus ultricies magna. Vestibulum porttitor, ante nec vulputate bibendum, ante lectus scelerisque tellus, nec accumsan tortor ex in lorem. Cras accumsan justo at elementum tempor.</div>
+    <div>Etiam et magna vel ex auctor elementum eu pharetra quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent ultricies eu quam ac porta.</div>
+
+    <button id="enlarge-btn">Enlarge</button>
+    <button id="orignal-btn">Orignal</button>
+    <button id="reduce-btn">Reduce</button>
+    <br>
+
+    <button id="toggle-btn">Toggle</button>
+
+
+    <script>
+        $(document).ready(function(){
+
+            $("#toggle-btn").click(function(){
+            $("div, #enlarge-btn, #orignal-btn, #reduce-btn").toggle();
+            });
+
+            $("#enlarge-btn").click(function(){
+            $("div").css("fontSize", "40px");
+            });
+
+            $("#orignal-btn").click(function(){
+            $("div").css("fontSize", "30px");
+            });
+
+            $("#reduce-btn").click(function(){
+            $("div").css("fontSize", "20px");
+            });
+
+        });
+
+    </script>
+</body>
+</html>

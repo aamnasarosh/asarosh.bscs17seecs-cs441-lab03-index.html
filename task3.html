@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+
+<body>
+    <h3>Task 3</h3>
+    <p id="number"></p>
+    <p id="message"></p>
+
+    <p id="output"></p>
+
+    <script>
+
+        var number = prompt("Enter a number:");
+        var message = prompt("Enter a message:");
+        
+        document.getElementById("number").innerHTML = "Input number: " + number;
+        document.getElementById("message").innerHTML = "Input message: " + message;
+
+        var text = "";
+        var i;
+        for (i = 0; i < number; i++) {
+            text += message + "<br>";
+        }
+        document.getElementById("output").innerHTML = text;
+
+    </script>
+</body>
+</html>
